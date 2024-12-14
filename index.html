@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Static Resume Builder</title>
+  <link rel="stylesheet" href="style.css"> <!-- Link to CSS -->
+</head>
+<body>
+  <div class="container">
+    <h1>Static Resume Builder</h1>
+    <div class="form-container">
+      <form id="resumeForm">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+        
+        <label for="education">Education:</label>
+        <textarea id="education" name="education"></textarea>
+        
+        <label for="skills">Skills:</label>
+        <textarea id="skills" name="skills"></textarea>
+        
+        <label for="experience">Experience:</label>
+        <textarea id="experience" name="experience"></textarea>
+        
+        <button type="button" id="generate">Generate Resume</button>
+      </form>
+    </div>
+    <div class="resume-preview">
+      <h2>Resume Preview</h2>
+      <div id="resumeOutput"></div>
+      <button id="download" style="display: none;">Download as PDF</button>
+    </div>
+  </div>
+  <script src="script.js"></script> <!-- Link to JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+</body>
+
+</html>
